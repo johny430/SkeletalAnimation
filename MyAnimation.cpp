@@ -13,7 +13,7 @@ int main()
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
     glewInit();
     glEnable(GL_DEPTH_TEST);
-    auto Object = Importer::LoadModel("assets/vampire/vampire.dae");
+    auto Object = Importer::LoadModel("assets/vampire.dae");
     Animation animation2 = Object.animations[0];
     Model render_model2 = Object.model;
     float _dt = 0.0f, _last_frame_time = 0.0f;
